@@ -1,0 +1,8 @@
+package com.dairyapplication.dairyApplication.service;
+
+import com.dairyapplication.dairyApplication.dto.FarmerFoodDistributionsDto;
+import com.dairyapplication.dairyApplication.entity.FarmerFoodDistributions;
+
+public interface FarmerFoodDistributionsIface {
+FarmerFoodDistributions createFarmerFoodDistribution(FarmerFoodDistributionsDto farmerFoodDistributionsDto);
+}
