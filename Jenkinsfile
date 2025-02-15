@@ -20,10 +20,13 @@ pipeline {
 		}
 
         stage('Test') {
-            steps {
-                bat 'mvn test'
-            }
+    steps {
+        dir('DairyApplication') {
+            sh 'mvn test'
         }
+       }
+	 }
+
 
         stage('Deploy') {
             steps {
