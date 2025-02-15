@@ -15,8 +15,9 @@ pipeline {
            steps {
         dir('DairyApplication') { // Adjust this if your project folder is named differently
             bat 'mvn clean package'
-        }
-        }
+			}
+		  }
+		}
 
         stage('Test') {
             steps {
