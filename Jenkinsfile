@@ -22,7 +22,7 @@ pipeline {
         stage('Test') {
     steps {
         dir('DairyApplication') {
-            sh 'mvn test'
+            bat 'mvn test'
         }
        }
 	 }
